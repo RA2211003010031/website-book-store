@@ -81,7 +81,73 @@ website book store/
 
 1. **Clone or Download**: Get the project files
 2. **Open in Browser**: Simply open `index.html` in any modern web browser
-3. **Local Server** (Optional): For development, use a local server like Live Server in VS Code
+3. **Run Local Server** (Recommended): Use any of the methods below for better development experience
+
+### Running the Website Locally 🖥️
+
+#### Method 1: Live Server (Best for Development) ⭐
+```bash
+# Install live-server globally (one-time setup)
+npm install -g live-server
+
+# Navigate to project directory
+cd "/path/to/website book store"
+
+# Start server with auto-reload
+live-server --port=3000 --open=/index.html
+
+# Visit: http://127.0.0.1:3000 or http://localhost:3000
+```
+**Benefits:** Auto-reload when files change, perfect for development
+
+#### Method 2: Python HTTP Server (Simple & Quick)
+```bash
+# Using Python 3 (most common)
+python3 -m http.server 8000
+
+# Using Python 2 (if needed)
+python -m SimpleHTTPServer 8000
+
+# Visit: http://localhost:8000
+```
+
+#### Method 3: Node.js HTTP Server
+```bash
+# Install http-server globally
+npm install -g http-server
+
+# Start server
+http-server -p 8080 -o
+
+# Visit: http://localhost:8080
+```
+
+#### Method 4: PHP Built-in Server
+```bash
+# If you have PHP installed
+php -S localhost:4000
+
+# Visit: http://localhost:4000
+```
+
+#### Method 5: Using VS Code Live Server Extension
+1. Install "Live Server" extension in VS Code
+2. Right-click on `index.html`
+3. Select "Open with Live Server"
+
+### Quick Start Commands 🚀
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/online-book-bazaar.git
+
+# Navigate to project
+cd online-book-bazaar
+
+# Start development server (choose one):
+npm start                    # If you have package.json scripts
+live-server --port=3000      # Live server with auto-reload
+python3 -m http.server 8000  # Simple Python server
+```
 
 ## Usage Guide 📖
 
@@ -105,6 +171,50 @@ website book store/
 - Safari
 - Edge
 - Mobile browsers (iOS Safari, Chrome Mobile)
+
+## Troubleshooting 🔧
+
+### Common Issues & Solutions
+
+#### Server Not Starting
+```bash
+# Check if port is already in use
+lsof -i :3000  # Check what's using port 3000
+kill -9 PID    # Kill the process (replace PID with actual process ID)
+
+# Try different port
+live-server --port=8080
+```
+
+#### Permission Denied Errors
+```bash
+# Try with sudo (macOS/Linux)
+sudo npm install -g live-server
+
+# Or use npx to run without global install
+npx live-server --port=3000
+```
+
+#### Python Not Found
+```bash
+# Check Python version
+python3 --version
+# or
+python --version
+
+# Install Python if needed (macOS with Homebrew)
+brew install python
+```
+
+#### Node.js/NPM Not Found
+- Download and install from [nodejs.org](https://nodejs.org)
+- Or install via Homebrew: `brew install node`
+
+### Development Tips 💡
+- Use **live-server** for best development experience
+- Keep browser dev tools open to see console errors
+- Test on different screen sizes using browser responsive mode
+- Clear browser cache if changes don't appear
 
 ## Future Enhancements 🔮
 
