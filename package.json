@@ -1,0 +1,41 @@
+{
+  "name": "online-book-bazaar",
+  "version": "1.0.0",
+  "description": "A modern online bookstore website featuring Indian and international literature",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch",
+    "build": "echo 'No build process required for static site'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "bookstore",
+    "books",
+    "e-commerce",
+    "hindi-literature",
+    "indian-books",
+    "javascript",
+    "html",
+    "css",
+    "responsive-design"
+  ],
+  "author": "Adarsh Raj",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/online-book-bazaar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/online-book-bazaar/issues"
+  },
+  "homepage": "https://YOUR_USERNAME.github.io/online-book-bazaar/",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
