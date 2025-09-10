@@ -1,6 +1,23 @@
 # Online Book Bazaar 📚
 
-A modern, responsive online bookstore website featuring Indian and international literature with a beautiful UI and comprehensive functionality.
+## About the Project 📖
+
+**Online Book Bazaar** is a modern and responsive web application designed to provide a seamless book shopping experience for readers across India and beyond.  
+
+The goal of this project is to create a **beautifully designed, easy-to-use, and scalable online bookstore** that not only showcases Indian literature but also brings together international titles in one place.  
+
+### 🎯 Objectives
+- Deliver a **smooth browsing and shopping experience** with search, filters, and categories  
+- Provide an **authentic bookstore feel** with detailed book descriptions, high-quality images, and Indian-themed UI elements  
+- Implement **real-world e-commerce features** such as cart management, user authentication, and order handling  
+- Serve as a **learning project** for students, developers, and contributors to practice front-end web development and collaboration on GitHub  
+
+### 🌟 Why This Project?
+- Many online bookstores focus only on international titles — this project highlights **Indian literature and culture** alongside global works  
+- Acts as a **practical demo project** for web developers to understand HTML, CSS, JavaScript, and deployment workflows  
+- Open-source nature encourages **collaboration, experimentation, and contribution** from the developer community  
+
+---
 
 ## Features ✨
 
@@ -233,15 +250,12 @@ We welcome contributions! Please feel free to:
 - Submit pull requests
 - Improve documentation
 
-## License 📄
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact 📞
 
 - **Email**: info@onlinebookbazaar.com
-- **Phone**: +91 98765 43210
-- **Address**: 123 Book Street, Literary District, Mumbai, Maharashtra 400001
+- **Phone**: +87784 61555
+- **Address**: SRM KTR Chennai
 
 ---
 
