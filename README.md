@@ -15,7 +15,7 @@ The goal of this project is to create a **beautifully designed, easy-to-use, and
 ### 🌟 Why This Project?
 - Many online bookstores focus only on international titles — this project highlights **Indian literature and culture** alongside global works  
 - Acts as a **practical demo project** for web developers to understand HTML, CSS, JavaScript, and deployment workflows  
-- Open-source nature encourages **collaboration, experimentation, and contribution** from the developer community  
+- Open-source nature encourages **collaboration, experimentation, and contribution** from the developer community.     
 
 ---
 
