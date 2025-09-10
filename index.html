@@ -1,291 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Book Bazaar - Your Digital Library</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
+<!DOCTYPE html> <html lang="en"> <head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Online Book Bazaar - Your Digital Library</title> <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head> <body>
+    <!-- Header --> <header class="header">
+        <nav class="navbar"> <div class="nav-container">
                 <div class="logo">
-                    <i class="fas fa-book-open"></i>
-                    <span>Online Book Bazaar</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#books" class="nav-link">Books</a></li>
-                    <li><a href="#categories" class="nav-link">Categories</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="nav-actions">
+                    <i class="fas fa-book-open"></i> <span>Online Book Bazaar</span>
+                </div> <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li> <li><a href="#books" class="nav-link">Books</a></li> <li><a href="#categories" class="nav-link">Categories</a></li> <li><a 
+                    href="#about" class="nav-link">About</a></li> <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul> <div class="nav-actions">
                     <div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search books...">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="cart-icon" onclick="toggleCart()">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count" id="cartCount">0</span>
-                    </div>
-                    <button class="login-btn" onclick="showLoginModal()">Login</button>
-                </div>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+                        <input type="text" id="searchInput" placeholder="Search books..."> <i class="fas fa-search"></i>
+                    </div> <div class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart"></i> <span class="cart-count" id="cartCount">0</span>
+                    </div> <button class="login-btn" onclick="showLoginModal()">Login</button>
+                </div> <div class="hamburger">
+                    <span></span> <span></span> <span></span>
+                </div> </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Hero Section --> <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Welcome to Online Book Bazaar</h1>
-            <p class="hero-subtitle">Discover Amazing Books from India and Around the World</p>
-            <p class="hero-description">From ancient Sanskrit texts to modern bestsellers, find your next great read in our vast collection</p>
-            <button class="cta-button" onclick="document.getElementById('books').scrollIntoView()">
-                Explore Books <i class="fas fa-arrow-right"></i>
-            </button>
-        </div>
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Books Collection">
-        </div>
+            <h1 class="hero-title">Welcome to Online Book Bazaar</h1> <p class="hero-subtitle">Discover Amazing Books from India and Around the World</p> <p class="hero-description">From ancient 
+            Sanskrit texts to modern bestsellers, find your next great read in our vast collection</p> <button class="cta-button" onclick="document.getElementById('books').scrollIntoView()">
+                Explore Books <i class="fas fa-arrow-right"></i> </button>
+        </div> <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Books Collection"> </div>
     </section>
 
-    <!-- Featured Categories -->
-    <section id="categories" class="categories">
+    <!-- Featured Categories --> <section id="categories" class="categories">
         <div class="container">
-            <h2 class="section-title">Browse by Categories</h2>
-            <div class="category-grid">
+            <h2 class="section-title">Browse by Categories</h2> <div class="category-grid">
                 <div class="category-card" onclick="filterBooks('hindi')">
-                    <i class="fas fa-language"></i>
-                    <h3>Hindi Literature</h3>
-                    <p>Classic and modern Hindi books</p>
+                    <i class="fas fa-language"></i> <h3>Hindi Literature</h3> <p>Classic and modern Hindi books</p>
+                </div> <div class="category-card" onclick="filterBooks('english')">
+                    <i class="fas fa-globe"></i> <h3>English Fiction</h3> <p>International bestsellers</p>
+                </div> <div class="category-card" onclick="filterBooks('spiritual')">
+                    <i class="fas fa-om"></i> <h3>Spiritual & Philosophy</h3> <p>Ancient wisdom and modern insights</p>
+                </div> <div class="category-card" onclick="filterBooks('technology')">
+                    <i class="fas fa-laptop-code"></i> <h3>Technology</h3> <p>Programming and tech books</p>
                 </div>
-                <div class="category-card" onclick="filterBooks('english')">
-                    <i class="fas fa-globe"></i>
-                    <h3>English Fiction</h3>
-                    <p>International bestsellers</p>
-                </div>
-                <div class="category-card" onclick="filterBooks('spiritual')">
-                    <i class="fas fa-om"></i>
-                    <h3>Spiritual & Philosophy</h3>
-                    <p>Ancient wisdom and modern insights</p>
-                </div>
-                <div class="category-card" onclick="filterBooks('technology')">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Technology</h3>
-                    <p>Programming and tech books</p>
-                </div>
-            </div>
-        </div>
+            </div> </div>
     </section>
 
-    <!-- Books Section -->
-    <section id="books" class="books-section">
+    <!-- Books Section --> <section id="books" class="books-section">
         <div class="container">
-            <h2 class="section-title">Our Book Collection</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn active" onclick="filterBooks('all')">All Books</button>
-                <button class="filter-btn" onclick="filterBooks('hindi')">Hindi</button>
-                <button class="filter-btn" onclick="filterBooks('english')">English</button>
-                <button class="filter-btn" onclick="filterBooks('spiritual')">Spiritual</button>
-                <button class="filter-btn" onclick="filterBooks('technology')">Technology</button>
-            </div>
-            <div class="books-grid" id="booksGrid">
+            <h2 class="section-title">Our Book Collection</h2> <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterBooks('all')">All Books</button> <button class="filter-btn" onclick="filterBooks('hindi')">Hindi</button> <button 
+                class="filter-btn" onclick="filterBooks('english')">English</button> <button class="filter-btn" onclick="filterBooks('spiritual')">Spiritual</button> <button class="filter-btn" 
+                onclick="filterBooks('technology')">Technology</button>
+            </div> <div class="books-grid" id="booksGrid">
                 <!-- Books will be loaded here dynamically -->
-            </div>
-        </div>
+            </div> </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Section --> <section id="about" class="about">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Online Book Bazaar</h2>
-                    <p>Founded with a passion for literature and learning, Online Book Bazaar brings together the best of Indian and international literature under one digital roof. We celebrate the rich literary heritage of India while embracing global perspectives.</p>
-                    <p>Our mission is to make quality books accessible to everyone, whether you're looking for ancient Sanskrit texts, contemporary Hindi novels, or the latest international bestsellers.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>10,000+</h3>
-                            <p>Books Available</p>
+            <div class="about-content"> <div class="about-text">
+                    <h2>About Online Book Bazaar</h2> <p>Founded with a passion for literature and learning, Online Book Bazaar brings together the best of Indian and international literature 
+                    under one digital roof. We celebrate the rich literary heritage of India while embracing global perspectives.</p> <p>Our mission is to make quality books accessible to 
+                    everyone, whether you're looking for ancient Sanskrit texts, contemporary Hindi novels, or the latest international bestsellers.</p> <div class="stats">
+                        <div class="stat"> <h3>10,000+</h3> <p>Books Available</p>
+                        </div> <div class="stat">
+                            <h3>50,000+</h3> <p>Happy Customers</p>
+                        </div> <div class="stat">
+                            <h3>15+</h3> <p>Languages</p>
                         </div>
-                        <div class="stat">
-                            <h3>50,000+</h3>
-                            <p>Happy Customers</p>
-                        </div>
-                        <div class="stat">
-                            <h3>15+</h3>
-                            <p>Languages</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
+                    </div> </div>
                     <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&h=400&fit=crop" alt="Library">
-                </div>
-            </div>
+                </div> </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Contact Section --> <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-content">
+            <h2 class="section-title">Contact Us</h2> <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p>123 Book Street, Literary District<br>Mumbai, Maharashtra 400001</p>
+                    <div class="contact-item"> <i class="fas fa-map-marker-alt"></i> <div>
+                            <h4>Address</h4> <p>123 Book Street, Literary District<br>Mumbai, Maharashtra 400001</p>
+                        </div> </div> <div class="contact-item">
+                        <i class="fas fa-phone"></i> <div>
+                            <h4>Phone</h4> <p>+91 98765 43210</p>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 98765 43210</p>
+                    </div> <div class="contact-item">
+                        <i class="fas fa-envelope"></i> <div>
+                            <h4>Email</h4> <p>info@onlinebookbazaar.com</p>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@onlinebookbazaar.com</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div> </div> <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required> <input type="email" placeholder="Your Email" required> <textarea placeholder="Your Message" rows="5" required></textarea> 
                     <button type="submit">Send Message</button>
-                </form>
-            </div>
+                </form> </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer"> <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <i class="fas fa-book-open"></i>
-                        <span>Online Book Bazaar</span>
-                    </div>
-                    <p>Your trusted partner for books in India and beyond. Discover, learn, and grow with us.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#books">Books</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="#about">About</a></li>
+                <div class="footer-section"> <div class="logo">
+                        <i class="fas fa-book-open"></i> <span>Online Book Bazaar</span>
+                    </div> <p>Your trusted partner for books in India and beyond. Discover, learn, and grow with us.</p> <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab 
+                        fa-youtube"></i></a>
+                    </div> </div> <div class="footer-section">
+                    <h4>Quick Links</h4> <ul>
+                        <li><a href="#home">Home</a></li> <li><a href="#books">Books</a></li> <li><a href="#categories">Categories</a></li> <li><a href="#about">About</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Categories</h4>
-                    <ul>
-                        <li><a href="#">Hindi Literature</a></li>
-                        <li><a href="#">English Fiction</a></li>
-                        <li><a href="#">Spiritual Books</a></li>
-                        <li><a href="#">Technology</a></li>
+                </div> <div class="footer-section">
+                    <h4>Categories</h4> <ul>
+                        <li><a href="#">Hindi Literature</a></li> <li><a href="#">English Fiction</a></li> <li><a href="#">Spiritual Books</a></li> <li><a href="#">Technology</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                </div> <div class="footer-section">
+                    <h4>Support</h4> <ul>
+                        <li><a href="#">Help Center</a></li> <li><a href="#">Shipping Info</a></li> <li><a href="#">Returns</a></li> <li><a href="#">Contact Us</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
+                </div> </div> <div class="footer-bottom">
                 <p>&copy; 2024 Online Book Bazaar. All rights reserved.</p>
-            </div>
-        </div>
+            </div> </div>
     </footer>
 
-    <!-- Cart Sidebar -->
-    <div class="cart-sidebar" id="cartSidebar">
+    <!-- Cart Sidebar --> <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
-            <h3>Shopping Cart</h3>
-            <button class="close-cart" onclick="toggleCart()">
+            <h3>Shopping Cart</h3> <button class="close-cart" onclick="toggleCart()">
                 <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="cart-items" id="cartItems">
+            </button> </div> <div class="cart-items" id="cartItems">
             <!-- Cart items will be added here -->
-        </div>
-        <div class="cart-footer">
+        </div> <div class="cart-footer">
             <div class="cart-total">
-                <strong>Total: ₹<span id="cartTotal">0</span></strong>
-            </div>
-            <button class="checkout-btn">Proceed to Checkout</button>
+                <strong>Total: ₹<span id="cartTotal">0</span></strong> </div> <button class="checkout-btn">Proceed to Checkout</button>
         </div>
     </div>
 
-    <!-- Login Modal -->
-    <div class="modal" id="loginModal">
+    <!-- Login Modal --> <div class="modal" id="loginModal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div class="auth-container">
+            <span class="close" onclick="closeModal()">&times;</span> <div class="auth-container">
                 <div class="auth-form" id="loginForm">
-                    <h2>Welcome Back!</h2>
-                    <form>
-                        <input type="email" placeholder="Email" required>
-                        <input type="password" placeholder="Password" required>
-                        <button type="submit">Login</button>
-                    </form>
-                    <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register here</a></p>
+                    <h2>Welcome Back!</h2> <form>
+                        <input type="email" placeholder="Email" required> <input type="password" placeholder="Password" required> <button type="submit">Login</button>
+                    </form> <p>Don't have an account? <a href="#" onclick="showRegisterForm()">Register here</a></p>
+                </div> <div class="auth-form hidden" id="registerForm">
+                    <h2>Create Account</h2> <form>
+                        <input type="text" placeholder="Full Name" required> <input type="email" placeholder="Email" required> <input type="password" placeholder="Password" required> <input 
+                        type="password" placeholder="Confirm Password" required> <button type="submit">Register</button>
+                    </form> <p>Already have an account? <a href="#" onclick="showLoginForm()">Login here</a></p>
                 </div>
-                <div class="auth-form hidden" id="registerForm">
-                    <h2>Create Account</h2>
-                    <form>
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="password" placeholder="Password" required>
-                        <input type="password" placeholder="Confirm Password" required>
-                        <button type="submit">Register</button>
-                    </form>
-                    <p>Already have an account? <a href="#" onclick="showLoginForm()">Login here</a></p>
-                </div>
-            </div>
-        </div>
+            </div> </div>
     </div>
 
-    <!-- Book Detail Modal -->
-    <div class="modal" id="bookModal">
-        <div class="modal-content book-detail">
-            <span class="close" onclick="closeBookModal()">&times;</span>
-            <div id="bookDetail">
-                <!-- Book details will be loaded here -->
-            </div>
-        </div>
+    <!-- Book Detail Modal --> <!-- Book Detail Modal -->
+<div class="modal" id="bookModal">
+    <div class="modal-content book-detail"> <!-- Close Button --> <span class="close" onclick="closeBookModal()">&times;</span>
+        
+        <div id="bookDetail" class="book-detail-container"> <!-- Example Layout (Content Loaded Dynamically) --> <div class="book-image">
+                <img src="https://cdn.pixabay.com/photo/2015/09/05/22/46/reading-925589_1280.jpg" alt="Book Cover" id="bookCover">
+            </div> <div class="book-info">
+                <h2 id="bookTitle">Book Title</h2> <p id="bookAuthor"><strong>Author:</strong> John Doe</p> <p id="bookDescription">This is where the book description will appear. Details about 
+                the storyline, theme, and highlights will be displayed here dynamically.</p> <p id="bookPrice"><strong>Price:</strong> ₹499</p>
+                
+                <div class="book-actions"> <button class="btn add-cart" onclick="addToCart()">🛒 Add to Cart</button> <button class="btn buy-now">⚡ Buy Now</button>
+                </div>
+            </div> </div>
     </div>
+</div>
 
-    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<!-- Cart Overlay --> <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<script src="script.js"></script>
+
+</body> </html>
+
