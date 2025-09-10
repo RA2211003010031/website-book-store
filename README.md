@@ -91,8 +91,19 @@ website book store/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styling
 ├── script.js           # JavaScript functionality
-└── README.md          # Project documentation
+├── package.json        # Project configuration
+├── .gitignore          # Git ignore rules
+├── README.md           # Project documentation
+├── DEPLOYMENT.md       # GitHub setup guide
+├── UBUNTU_GUIDE.md     # Complete Ubuntu/DevOps guide
+└── QUICK_REFERENCE.md  # Command cheat sheet
 ```
+
+## Additional Documentation 📚
+
+- **[Ubuntu Terminal Guide](UBUNTU_GUIDE.md)** - Complete guide for Ubuntu/AWS EC2 setup, Git workflows, and DevOps project
+- **[Quick Reference](QUICK_REFERENCE.md)** - Essential commands cheat sheet
+- **[Deployment Guide](DEPLOYMENT.md)** - GitHub repository setup and hosting
 
 ## Installation & Setup 🚀
 
