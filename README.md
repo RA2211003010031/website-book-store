@@ -248,6 +248,7 @@ We welcome contributions! Please feel free to:
 - Report bugs
 - Suggest new features
 - Submit pull requests
+- Make changes where valid
 - Improve documentation
 
 
