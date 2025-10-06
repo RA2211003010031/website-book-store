@@ -62,23 +62,30 @@ Our curated collection includes:
 - मुंशी प्रेमचंद की कहानियां
 - अपराध और दंड - फ्योदोर दोस्तोयेवस्की (हिंदी अनुवाद)
 - तितली - हरिवंशराय बच्चन
+- शिवाजी महाराज - बाबासाहेब पुरंदरे
+- डॉ. ए.पी.जे. अब्दुल कलाम: एक जीवनी - आर.के. लक्ष्मण
+- मधुशाला - हरिवंशराय बच्चन
 
 ### Spiritual & Philosophy
 - गीता रहस्य - बाल गंगाधर तिलक
 - रामायण - महर्षि वाल्मीकि
 - योग वशिष्ठ - महर्षि वाल्मीकि
 - भागवत गीता - व्यास जी
+- The Mahabharata: A Modern Rendering - Ramesh Menon
+- Arthashastra - Kautilya (Chanakya)
 
 ### English Fiction
 - The God of Small Things - Arundhati Roy
 - Midnight's Children - Salman Rushdie
 - The White Tiger - Aravind Adiga
 - Sacred Games - Vikram Chandra
+- Train to Pakistan - Khushwant Singh
 
 ### Technology
 - Clean Code - Robert C. Martin
 - JavaScript: The Good Parts - Douglas Crockford
 - Python Programming - Mark Lutz
+- React.js Development - Alex Banks
 
 ## Technologies Used 💻
 

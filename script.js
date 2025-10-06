@@ -220,6 +220,97 @@ const books = [
         language: "English",
         pages: 1648,
         publisher: "O'Reilly Media"
+    },
+    {
+        id: 18,
+        title: "शिवाजी महाराज",
+        author: "बाबासाहेब पुरंदरे",
+        category: "hindi",
+        price: 425,
+        stock: 16,
+        image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=300&h=400&fit=crop",
+        description: "मराठा साम्राज्य के संस्थापक छत्रपति शिवाजी महाराज का प्रामाणिक जीवन चरित्र। वीरता, कूटनीति और आदर्श शासन की गाथा।",
+        language: "Hindi",
+        pages: 380,
+        publisher: "राजकमल प्रकाशन"
+    },
+    {
+        id: 19,
+        title: "The Mahabharata: A Modern Rendering",
+        author: "Ramesh Menon",
+        category: "spiritual",
+        price: 899,
+        stock: 20,
+        image: "https://images.unsplash.com/photo-1567427018141-95ea69eb8262?w=300&h=400&fit=crop",
+        description: "A contemporary retelling of the great Indian epic. Complete with all major stories, characters, and philosophical teachings in accessible English.",
+        language: "English",
+        pages: 1100,
+        publisher: "Rupa Publications"
+    },
+    {
+        id: 20,
+        title: "डॉ. ए.पी.जे. अब्दुल कलाम: एक जीवनी",
+        author: "आर.के. लक्ष्मण",
+        category: "hindi",
+        price: 350,
+        stock: 28,
+        image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=400&fit=crop",
+        description: "भारत के मिसाइल मैन और जनता के राष्ट्रपति डॉ. कलाम का प्रेरणादायक जीवन चरित्र। वैज्ञानिक सोच और सादगी का अनूठा मिश्रण।",
+        language: "Hindi",
+        pages: 290,
+        publisher: "प्रभात प्रकाशन"
+    },
+    {
+        id: 21,
+        title: "Train to Pakistan",
+        author: "Khushwant Singh",
+        category: "english",
+        price: 399,
+        stock: 24,
+        image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300&h=400&fit=crop",
+        description: "A powerful novel about the partition of India. Set in a fictional village on the border, it explores the human cost of political decisions.",
+        language: "English",
+        pages: 181,
+        publisher: "Grove Press"
+    },
+    {
+        id: 22,
+        title: "React.js Development",
+        author: "Alex Banks",
+        category: "technology",
+        price: 1199,
+        stock: 15,
+        image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=300&h=400&fit=crop",
+        description: "Master modern React development with hooks, context API, and latest best practices. Includes real-world projects and deployment strategies.",
+        language: "English",
+        pages: 750,
+        publisher: "O'Reilly Media"
+    },
+    {
+        id: 23,
+        title: "मधुशाला",
+        author: "हरिवंशराय बच्चन",
+        category: "hindi",
+        price: 199,
+        stock: 35,
+        image: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=300&h=400&fit=crop",
+        description: "हिंदी साहित्य की अमर कृति। जीवन के दर्शन को मधुशाला, मधु और प्याले के प्रतीकों के माध्यम से प्रस्तुत करती यह कालजयी रचना।",
+        language: "Hindi",
+        pages: 120,
+        publisher: "राजपाल एंड संस"
+    },
+    {
+        id: 24,
+        title: "Arthashastra",
+        author: "Kautilya (Chanakya)",
+        category: "spiritual",
+        price: 649,
+        stock: 18,
+        image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=400&fit=crop",
+        description: "Ancient Indian treatise on statecraft, economics, and political strategy. Chanakya's timeless wisdom on governance, diplomacy, and administration.",
+        language: "English",
+        pages: 650,
+        publisher: "Penguin Classics"
     }
 ];
 
