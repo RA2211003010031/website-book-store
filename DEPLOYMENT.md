@@ -79,6 +79,8 @@ Your team can now:
 
 For development with auto-reload:
 
+run the following:
+
 ```bash
 # Install live-server globally (one time setup)
 npm install -g live-server
