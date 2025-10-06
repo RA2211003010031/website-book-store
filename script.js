@@ -155,6 +155,71 @@ const books = [
         language: "Hindi",
         pages: 400,
         publisher: "राजकमल प्रकाशन"
+    },
+    {
+        id: 13,
+        title: "अपराध और दंड",
+        author: "फ्योदोर दोस्तोयेवस्की",
+        category: "hindi",
+        price: 549,
+        stock: 14,
+        image: "https://images.unsplash.com/photo-1495640388908-05fa85288e61?w=300&h=400&fit=crop",
+        description: "रूसी महान् लेखक दोस्तोयेवस्की का कालजयी उपन्यास। अपराध की मानसिकता और पश्चाताप की गहरी पड़ताल। हिंदी अनुवाद।",
+        language: "Hindi",
+        pages: 680,
+        publisher: "राजकमल प्रकाशन"
+    },
+    {
+        id: 14,
+        title: "Sacred Games",
+        author: "Vikram Chandra",
+        category: "english",
+        price: 799,
+        stock: 18,
+        image: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=300&h=400&fit=crop",
+        description: "A sprawling epic of contemporary Mumbai, following a police inspector and a criminal overlord. A masterpiece of modern Indian literature that became a Netflix series.",
+        language: "English",
+        pages: 916,
+        publisher: "Faber & Faber"
+    },
+    {
+        id: 15,
+        title: "भागवत गीता",
+        author: "व्यास जी",
+        category: "spiritual",
+        price: 399,
+        stock: 40,
+        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=400&fit=crop",
+        description: "श्रीकृष्ण और अर्जुन का संवाद। जीवन के हर क्षेत्र में मार्गदर्शन देने वाला अमर ग्रंथ। सरल हिंदी अनुवाद और व्याख्या सहित।",
+        language: "Hindi",
+        pages: 245,
+        publisher: "गीता प्रेस गोरखपुर"
+    },
+    {
+        id: 16,
+        title: "तितली",
+        author: "हरिवंशराय बच्चन",
+        category: "hindi",
+        price: 275,
+        stock: 22,
+        image: "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=300&h=400&fit=crop",
+        description: "हरिवंशराय बच्चन का प्रसिद्ध काव्य संग्रह। मधुशाला के रचयिता की अन्य सुंदर कविताओं का संकलन।",
+        language: "Hindi",
+        pages: 156,
+        publisher: "राजपाल एंड संस"
+    },
+    {
+        id: 17,
+        title: "Python Programming",
+        author: "Mark Lutz",
+        category: "technology",
+        price: 1299,
+        stock: 12,
+        image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=300&h=400&fit=crop",
+        description: "Complete guide to Python programming language. From basics to advanced concepts including web development, data science, and automation.",
+        language: "English",
+        pages: 1648,
+        publisher: "O'Reilly Media"
     }
 ];
 
