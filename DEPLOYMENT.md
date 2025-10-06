@@ -27,7 +27,7 @@ git push -u origin main
 
 **Replace `YOUR_USERNAME` with your actual GitHub username!**
 
-## Step 3: Enable GitHub Pages (Free Hosting)
+## Step 3: Enable GitHub Pages (Free Hosting) or any personal host
 
 1. **Go to Repository Settings**: Click "Settings" tab in your repository
 2. **Find Pages Section**: Scroll down to "Pages" in the left sidebar
